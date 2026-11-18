@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>클라비스 아카데미 신입생 안내서</title>
+<meta name="description" content="입학식 날 밤, 지하 금서고에서 봉인 셋이 눈을 떴다. 크랙 작품 《클라비스 아카데미》의 인물과 학칙, 시작하는 법.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="클라비스 아카데미 신입생 안내서">
+<meta property="og:description" content="아카데미 꼴찌, 봉인 셋이 날 찜했다. 입학식 날 밤, 금서고에서 봉인된 셋 중 하나와 계약하는 아카데미물.">
+<meta property="og:image" content="https://rlawhddja1231-hash.github.io/clavis-academy/img/og.jpg">
+<meta property="og:url" content="https://rlawhddja1231-hash.github.io/clavis-academy/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#161e35">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23161e35'/%3E%3Ccircle cx='11' cy='16' r='5.5' fill='none' stroke='%23cdaa5e' stroke-width='2.4'/%3E%3Cpath d='M16.5 16h11M23 16v4M26.5 16v3' stroke='%23cdaa5e' stroke-width='2.4' fill='none'/%3E%3C/svg%3E">
+<link rel="preload" href="fonts/hahmlet-sub.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/plex-400-sub.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:"Hahmlet";src:url("fonts/hahmlet-sub.woff2") format("woff2");font-weight:100 900;font-display:swap}
+@font-face{font-family:"Plex KR";src:url("fonts/plex-400-sub.woff2") format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Plex KR";src:url("fonts/plex-600-sub.woff2") format("woff2");font-weight:600;font-display:swap}
+
+:root{
+  --ink:#161e35;
+  --ink-2:#1e2742;
+  --ink-line:#34405f;
+  --on-ink:#ebe7dc;
+  --on-ink-dim:#a9b0c4;
+  --gold:#cdaa5e;
+  --gold-ink:#7d6127;
+  --paper:#e3e7e4;
+  --paper-2:#d7ddda;
+  --paper-line:#bcc4c1;
+  --text:#1a2238;
+  --text-dim:#4a536a;
+  --caleb:#e2b851;
+  --asel:#cf7b3c;
+  --arche:#94d3e5;
+  --serif:"Hahmlet","Noto Serif KR","Nanum Myeongjo",serif;
+  --sans:"Plex KR","IBM Plex Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --measure:38rem;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--ink);color:var(--on-ink);font:400 1.0625rem/1.75 var(--sans);word-break:keep-all;overflow-wrap:break-word}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:700;line-height:1.25;margin:0}
+p{margin:0}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+.paper :focus-visible{outline-color:var(--gold-ink)}
+.skip{position:absolute;left:-9999px;top:0}
+.skip:focus{left:1rem;top:1rem;z-index:99;background:var(--gold);color:var(--ink);padding:.5rem .9rem}
+
+/* 맨 위 줄 */
+.top{position:sticky;top:0;z-index:20;background:rgba(22,30,53,.94);border-bottom:1px solid var(--ink-line);backdrop-filter:blur(6px)}
+.top-in{max-width:72rem;margin:0 auto;display:flex;align-items:center;gap:1.5rem;padding:.7rem 1.25rem}
+.mark{display:flex;align-items:center;gap:.55rem;text-decoration:none;font-family:var(--serif);font-weight:700;font-size:1.06rem;letter-spacing:.02em;white-space:nowrap}
+.mark svg{flex:none}
+.menu{display:flex;gap:1.15rem;margin:0;padding:0;list-style:none;overflow-x:auto;scrollbar-width:none}
+.menu::-webkit-scrollbar{display:none}
+.menu a{text-decoration:none;color:var(--on-ink-dim);font-size:.94rem;white-space:nowrap;padding:.2rem 0}
+.menu a:hover{color:var(--on-ink)}
+.top .play{margin-left:auto}
+
+.play{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;background:var(--gold);color:var(--ink);font:600 .98rem/1 var(--sans);text-decoration:none;padding:.78rem 1.15rem;border-radius:2px;white-space:nowrap}
+.play:hover{background:#dcbb72}
+.ghost{display:inline-flex;align-items:center;justify-content:center;color:var(--on-ink);font:600 .98rem/1 var(--sans);text-decoration:none;padding:.74rem 1.1rem;border:1px solid #6d7795;border-radius:2px;white-space:nowrap}
+.ghost:hover{border-color:var(--on-ink)}
+.top .play{padding:.55rem .9rem;font-size:.9rem}
+
+/* 첫 화면 */
+.hero{position:relative;min-height:min(46rem,92vh);display:flex;align-items:flex-end;overflow:hidden;isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:-1}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:60% 40%}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(22,30,53,.95) 0%,rgba(22,30,53,.78) 38%,rgba(22,30,53,.15) 75%),linear-gradient(0deg,var(--ink) 0%,rgba(22,30,53,0) 30%)}
+.hero-in{max-width:72rem;width:100%;margin:0 auto;padding:7rem 1.25rem 4.5rem}
+.plate{display:inline-block;border:1px solid rgba(205,170,94,.55);padding:.55rem .9rem;font-size:.9rem;line-height:1.55;color:#d9d3c2;margin-bottom:2.2rem;background:rgba(22,30,53,.55)}
+.plate b{display:block;font-family:var(--serif);font-weight:700;color:var(--gold);font-size:1rem;letter-spacing:.04em}
+.hero h1{font-size:clamp(2.9rem,7.4vw,5.6rem);font-weight:800;letter-spacing:-.01em;line-height:1.08}
+.hero .lede{font-family:var(--serif);font-size:clamp(1.2rem,2.4vw,1.55rem);font-weight:500;margin-top:1rem;color:#efe9d8}
+.hero .sum{max-width:30rem;color:var(--on-ink-dim);margin-top:1.4rem}
+.acts{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:2.2rem}
+
+/* 봉인 셋 */
+.seals{padding:5.5rem 0 6rem;background:var(--ink)}
+.wrap{max-width:72rem;margin:0 auto;padding:0 1.25rem}
+.seals-head{max-width:var(--measure)}
+.seals h2{font-size:clamp(2rem,4vw,2.75rem)}
+.seals-head p{color:var(--on-ink-dim);margin-top:1rem}
+.chorus{font-family:var(--serif);font-size:1.18rem;color:var(--on-ink);margin-top:1.6rem;padding-left:1rem;border-left:2px solid var(--gold)}
+.seal-row{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem;margin-top:3.2rem;align-items:start}
+.seal{--c:var(--gold)}
+.seal[data-k=caleb]{--c:var(--caleb)}
+.seal[data-k=asel]{--c:var(--asel)}
+.seal[data-k=arche]{--c:var(--arche)}
+.frame{position:relative;aspect-ratio:1;background:#0f1528}
+.frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.frame .human{opacity:0}
+.frame::before{content:"";position:absolute;inset:10px;z-index:2;pointer-events:none;
+  background:
+   linear-gradient(var(--c),var(--c)) top left/18px 1px no-repeat,
+   linear-gradient(var(--c),var(--c)) top left/1px 18px no-repeat,
+   linear-gradient(var(--c),var(--c)) top right/18px 1px no-repeat,
+   linear-gradient(var(--c),var(--c)) top right/1px 18px no-repeat,
+   linear-gradient(var(--c),var(--c)) bottom left/18px 1px no-repeat,
+   linear-gradient(var(--c),var(--c)) bottom left/1px 18px no-repeat,
+   linear-gradient(var(--c),var(--c)) bottom right/18px 1px no-repeat,
+   linear-gradient(var(--c),var(--c)) bottom right/1px 18px no-repeat;opacity:.85}
+.ring{position:absolute;inset:0;z-index:3;width:100%;height:100%;pointer-events:none}
+.ring circle{fill:none;stroke:var(--c);stroke-width:1.2;stroke-dasharray:302;stroke-dashoffset:302;opacity:0}
+.flash{position:absolute;inset:0;z-index:1;background:radial-gradient(circle at 50% 50%,var(--c),transparent 62%);opacity:0;mix-blend-mode:screen;pointer-events:none}
+.seal-name{display:flex;align-items:baseline;gap:.6rem;margin-top:1.3rem}
+.seal-name small{font-size:.92rem;color:var(--c)}
+.seal-name h3{font-size:1.65rem}
+.seal-line{font-family:var(--serif);color:#ddd8ca;margin-top:.6rem;min-height:5.2em;font-size:1.02rem}
+.unseal{margin-top:1.1rem;width:100%;display:flex;align-items:center;justify-content:center;gap:.55rem;background:transparent;color:var(--on-ink);border:1px solid var(--c);padding:.8rem 1rem;font:600 .98rem/1 var(--sans);border-radius:2px;cursor:pointer}
+.unseal:hover{background:rgba(255,255,255,.04)}
+.unseal svg{flex:none}
+.more{display:grid;grid-template-rows:0fr;transition:grid-template-rows .45s ease}
+.more > div{overflow:hidden}
+.seal.open .more{grid-template-rows:1fr}
+.more dl{margin:1.2rem 0 0;border-top:1px solid var(--ink-line)}
+.more dl div{display:grid;grid-template-columns:7.2rem 1fr;gap:.8rem;padding:.6rem 0;border-bottom:1px solid var(--ink-line);font-size:.96rem}
+.more dt{color:var(--on-ink-dim)}
+.more dd{margin:0}
+.seal-note{margin-top:3rem;color:var(--on-ink-dim);max-width:var(--measure);font-size:.96rem}
+
+.seal.open .frame .obj{animation:objOut .9s ease forwards}
+.seal.open .frame .human{animation:humanIn .9s ease forwards}
+.seal.open .frame .flash{animation:flash .9s ease}
+.seal.open .ring circle{animation:ring .9s ease}
+.seal.closing .frame .human{animation:humanOut .4s ease forwards}
+@keyframes ring{0%{opacity:1;stroke-dashoffset:302}55%{opacity:1;stroke-dashoffset:0}100%{opacity:0;stroke-dashoffset:0}}
+@keyframes flash{0%,35%{opacity:0}55%{opacity:.75}100%{opacity:0}}
+@keyframes objOut{0%,40%{opacity:1;filter:brightness(1)}55%{opacity:1;filter:brightness(1.7)}75%,100%{opacity:0;filter:brightness(1.7)}}
+@keyframes humanIn{0%,50%{opacity:0}85%,100%{opacity:1}}
+@keyframes humanOut{from{opacity:1}to{opacity:0}}
+@media (prefers-reduced-motion:reduce){
+  .seal.open .frame .obj,.seal.open .frame .human,.seal.open .frame .flash,.seal.open .ring circle,.seal.closing .frame .human{animation:none}
+  .seal.open .frame .obj{opacity:0}
+  .seal.open .frame .human{opacity:1}
+  .more{transition:none}
+}
+
+/* 종이 부분 */
+.paper{background:var(--paper);color:var(--text)}
+.paper-in{max-width:72rem;margin:0 auto;padding:5.5rem 1.25rem}
+.book-head{display:flex;justify-content:space-between;align-items:flex-start;gap:2rem;padding-bottom:2.2rem;border-bottom:2px solid var(--text)}
+.book-head h2{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:800}
+.book-head p{color:var(--text-dim);margin-top:.6rem}
+.stamp{flex:none;transform:rotate(-8deg);color:#2c3a6b;opacity:.85}
+.sec{padding-top:4.2rem}
+.sec h2{font-size:clamp(1.75rem,3.4vw,2.3rem)}
+.sec > .intro{color:var(--text-dim);margin-top:.8rem;max-width:var(--measure)}
+
+/* 학칙 */
+.rules{list-style:none;margin:2.4rem 0 0;padding:0;max-width:52rem}
+.rules li{display:grid;grid-template-columns:5.2rem 1fr;gap:1.2rem;padding:1.15rem 0;border-top:1px solid var(--paper-line)}
+.rules li:last-child{border-bottom:1px solid var(--paper-line)}
+.rules .no{font-family:var(--serif);font-weight:700;color:var(--gold-ink)}
+.rules h3{font-size:1.15rem;margin-bottom:.25rem}
+.pencil{margin-top:.7rem;padding:.55rem .8rem;background:var(--paper-2);font-size:.94rem;color:var(--text-dim);border-left:2px solid #8a93a6}
+
+/* 인물 명부 */
+.filters{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:2rem}
+.filters button{font:600 .93rem/1 var(--sans);color:var(--text);background:transparent;border:1px solid var(--paper-line);padding:.62rem .95rem;border-radius:2px;cursor:pointer}
+.filters button[aria-pressed=true]{background:var(--text);border-color:var(--text);color:var(--paper)}
+.people{display:grid;grid-template-columns:repeat(3,1fr);gap:2.2rem 1.6rem;margin-top:2rem}
+.person[hidden]{display:none}
+.person{display:block;width:100%;text-align:left;background:none;border:0;padding:0;color:inherit;font:inherit;cursor:pointer}
+.person img{width:100%;aspect-ratio:1200/821;object-fit:cover;background:var(--paper-2)}
+.person .nm{display:flex;align-items:baseline;gap:.5rem;margin-top:.75rem}
+.person .nm b{font-family:var(--serif);font-size:1.22rem}
+.person .nm span{font-size:.88rem;color:var(--text-dim)}
+.person .one{display:block;font-size:.95rem;color:var(--text-dim);margin-top:.2rem}
+.person:hover .nm b{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+
+dialog{border:0;padding:0;max-width:min(66rem,94vw);width:100%;max-height:94vh;overflow:auto;background:var(--paper);color:var(--text)}
+dialog::backdrop{background:rgba(12,17,32,.78)}
+.dlg{display:grid;grid-template-columns:3fr 2fr;position:relative}
+.dlg-pic > img{width:100%;height:auto;aspect-ratio:1200/821;display:block}
+.dlg-body{padding:1.6rem 1.6rem 1.6rem}
+.dlg-body h3{font-size:1.7rem}
+.dlg-body .where{color:var(--text-dim);margin-top:.2rem;font-size:.95rem}
+.dlg-body dl{margin:1.2rem 0 0}
+.dlg-body dl div{padding:.55rem 0;border-top:1px solid var(--paper-line);font-size:.96rem}
+.dlg-body dt{font-size:.86rem;color:var(--text-dim)}
+.dlg-body dd{margin:.1rem 0 0}
+.faces{display:grid;grid-template-columns:repeat(6,1fr);gap:.4rem;padding:.6rem;background:var(--paper-2)}
+.faces button{display:block;padding:0;border:2px solid transparent;background:none;cursor:pointer;font:600 .8rem/1.2 var(--sans);color:var(--text-dim);text-align:center}
+.faces button img{width:100%;aspect-ratio:264/181;object-fit:cover;display:block}
+.faces button span{display:block;padding:.3rem 0 .15rem}
+.faces button[aria-pressed=true]{border-color:var(--text)}
+.faces button[aria-pressed=true] span{color:var(--text)}
+.close{position:absolute;z-index:2;top:.7rem;right:.7rem;font:600 .9rem/1 var(--sans);background:var(--paper);border:1px solid var(--paper-line);padding:.5rem .7rem;border-radius:2px;cursor:pointer;color:var(--text)}
+
+
+/* 처음 하는 법 */
+.start{display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;margin-top:2.4rem;align-items:start}
+.start h3{font-size:1.2rem;margin-bottom:.7rem}
+.modes{margin:0}
+.modes div{padding:.8rem 0;border-top:1px solid var(--paper-line)}
+.modes dt{font-family:var(--serif);font-weight:700}
+.modes dd{margin:.15rem 0 0;color:var(--text-dim)}
+.tries{list-style:none;padding:0;margin:0}
+.tries li{padding:.55rem .8rem;background:var(--paper-2);margin-bottom:.45rem;font-family:var(--serif)}
+.tips{padding-left:1.1rem;margin:0}
+.tips li{margin-bottom:.5rem}
+.nw{white-space:nowrap}
+.status{margin-top:2rem;background:var(--ink);color:var(--on-ink);padding:1.1rem 1.2rem;font-size:.93rem;line-height:1.85}
+.status p{padding:.45rem 0;border-top:1px solid var(--ink-line)}
+.status p.cap{border-top:0;padding-top:0;color:var(--on-ink-dim);font-size:.85rem}
+.facts{display:flex;flex-wrap:wrap;gap:.4rem 1.6rem;margin:2.6rem 0 0;padding:1rem 0;border-top:2px solid var(--text);border-bottom:1px solid var(--paper-line)}
+.facts div{display:flex;gap:.45rem;align-items:baseline}
+.facts dt{color:var(--text-dim);font-size:.92rem}
+.facts dd{margin:0;font-family:var(--serif);font-weight:700;font-size:1.1rem}
+.cta{display:flex;flex-wrap:wrap;align-items:center;gap:1rem 1.4rem;margin-top:2.2rem}
+.cta p{color:var(--text-dim);font-size:.95rem}
+.paper .play{background:var(--text);color:var(--paper);font-size:1.05rem;padding:.95rem 1.4rem}
+.paper .play:hover{background:#2a3456}
+
+footer{background:var(--ink);color:var(--on-ink-dim);padding:2.4rem 0;font-size:.9rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.6rem}
+
+@media (max-width:900px){
+  .seal-row{grid-template-columns:1fr;gap:3.4rem;max-width:30rem}
+  .seal-line{min-height:0}
+  .people{grid-template-columns:repeat(2,1fr)}
+  .start{grid-template-columns:1fr;gap:2.4rem}
+}
+@media (max-width:620px){
+  body{font-size:1rem}
+  .menu{display:none}
+  .hero{min-height:0;align-items:stretch;flex-direction:column}
+  .hero-bg{position:relative;height:15rem}
+  .hero-bg::after{background:linear-gradient(0deg,var(--ink) 0%,rgba(22,30,53,0) 55%)}
+  .hero-in{padding:0 1.25rem 3.4rem;margin-top:-2.5rem}
+  .people{grid-template-columns:1fr}
+  .dlg{grid-template-columns:1fr}
+  .dlg-body{padding:1.3rem 1.3rem 1.5rem}
+  .faces{grid-template-columns:repeat(3,1fr)}
+  .book-head{flex-direction:column-reverse;gap:1rem}
+  .rules li{grid-template-columns:1fr;gap:.2rem}
+  .more dl div{grid-template-columns:6rem 1fr}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#seals">본문으로 건너뛰기</a>
+
+<header class="top">
+  <div class="top-in">
+    <a class="mark" href="#top" aria-label="클라비스 아카데미, 맨 위로">
+      <svg width="26" height="14" viewBox="0 0 26 14" aria-hidden="true"><circle cx="6.5" cy="7" r="5" fill="none" stroke="#cdaa5e" stroke-width="2"/><path d="M11.5 7h13M20.5 7v4M24 7v3" fill="none" stroke="#cdaa5e" stroke-width="2"/></svg>
+      클라비스 아카데미
+    </a>
+    <ul class="menu">
+      <li><a href="#seals">봉인 셋</a></li>
+      <li><a href="#rules">학칙</a></li>
+      <li><a href="#people">인물 명부</a></li>
+      <li><a href="#start">처음 하는 법</a></li>
+    </ul>
+    <a class="play" href="https://crack.wrtn.ai/detail/6afa7856c443dc39f53a9e3e" target="_blank" rel="noopener">크랙에서 플레이</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero" aria-labelledby="t">
+    <div class="hero-bg"><img src="img/hall.jpg" alt="" width="1216" height="832" fetchpriority="high"></div>
+    <div class="hero-in">
+      <p class="plate"><b>출입 금지 — 금서고</b>들어간 학생은 즉시 퇴학. 학칙 제1조</p>
+      <h1 id="t">클라비스 아카데미</h1>
+      <p class="lede">아카데미 꼴찌, 봉인 셋이 날 찜했다</p>
+      <p class="sum">입학식 날 밤, 길을 잃고 내려간 지하 금서고. 봉인된 셋이 동시에 눈을 뜬다. 학과 배정 시험까지 열네 날, 들키면 퇴학 위기다.</p>
+      <div class="acts">
+        <a class="play" href="https://crack.wrtn.ai/detail/6afa7856c443dc39f53a9e3e" target="_blank" rel="noopener">크랙에서 플레이</a>
+        <a class="ghost" href="#seals">봉인 셋 만나기</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="seals" id="seals" aria-labelledby="seals-t">
+    <div class="wrap">
+      <div class="seals-head">
+        <h2 id="seals-t">누구의 손을 잡을 건가?</h2>
+        <p>등급 측정석이 당신 앞에서만 끝까지 빛나지 않은 날 밤. 금서고 깊은 곳에서 깨어난 셋이 서로 자기를 고르라고 다툰다.</p>
+        <p class="chorus">“손을 잡아. 우리 중 하나를 고르면, 이 학교 최강으로 만들어 주지.”</p>
+      </div>
+
+      <div class="seal-row" id="seal-row"></div>
+
+      <p class="seal-note">계약은 하나뿐이다. 고르지 않은 둘은 금서고에 봉인된 채 남는다. 사람 모습은 고른 혼과 가까워져 봉인이 여러 겹 풀린 뒤에야 잠깐씩 드러난다.</p>
+    </div>
+  </section>
+
+  <div class="paper">
+    <div class="paper-in">
+      <div class="book-head">
+        <div>
+          <h2>신입생 안내서</h2>
+          <p>클라비스 아카데미 학장실 펴냄. 입학식 날 신입생 모두에게 한 부씩 나눠 준다.</p>
+        </div>
+        <svg class="stamp" width="112" height="112" viewBox="0 0 112 112" role="img" aria-label="학장실 도장">
+          <circle cx="56" cy="56" r="52" fill="none" stroke="currentColor" stroke-width="3"/>
+          <circle cx="56" cy="56" r="45" fill="none" stroke="currentColor" stroke-width="1.2"/>
+          <circle cx="42" cy="46" r="9" fill="none" stroke="currentColor" stroke-width="3"/>
+          <path d="M51 46h26M70 46v7M76 46v5" fill="none" stroke="currentColor" stroke-width="3"/>
+          <text x="56" y="80" text-anchor="middle" font-family="Hahmlet,serif" font-weight="800" font-size="17" fill="currentColor">학장실</text>
+        </svg>
+      </div>
+
+      <section class="sec" id="rules" aria-labelledby="rules-t">
+        <h2 id="rules-t">학칙</h2>
+        <p class="intro">신입생이 먼저 알아야 할 조항만 옮겼다.</p>
+        <ol class="rules">
+          <li><span class="no">제1조</span><div><h3>금서고</h3><p>본관 지하 금서고는 출입을 금한다. 들어간 학생은 즉시 퇴학한다. 관리는 마그다 학과장이 맡는다.</p></div></li>
+          <li><span class="no">제2조</span><div><h3>학과</h3><p>본교는 마법과, 검술과, 정령학과를 둔다. 정령은 감응력이 있는 사람에게만 보인다.</p></div></li>
+          <li><span class="no">제3조</span><div><h3>등급</h3><p>등급은 학과마다 따로 매긴다. 마법과는 써클(1~9), 검술과는 오러(유저, 익스퍼트, 마스터, 그랜드마스터), 정령학과는 계약한 정령의 계급(하급, 중급, 상급, 정령왕)으로 한다.</p></div></li>
+          <li><span class="no">제4조</span><div><h3>등급 측정</h3><p>신입생은 입학식 날 대강당에서 측정석에 손을 얹어 처음 등급을 받는다.</p><p class="pencil">연필 메모: 올해 측정석이 끝까지 안 빛난 신입이 하나 있다. 다들 「불꺼진 신입」이라고 부른다.</p></div></li>
+          <li><span class="no">제5조</span><div><h3>학과 배정 시험</h3><p>입학 열네 날 뒤에 치른다. 마법 시연, 검술 대련, 정령 감응 가운데 하나를 골라 치른다.</p></div></li>
+          <li><span class="no">제6조</span><div><h3>기숙사</h3><p>기숙사는 2인 1실이다. 통금은 23시다.</p></div></li>
+          <li><span class="no">제7조</span><div><h3>학기 행사</h3><p>시험 뒤에는 합동 실습, 학과 대항전, 축제가 이어진다. 행사마다 게시판에 안내문과 조 편성표를 붙인다.</p></div></li>
+        </ol>
+      </section>
+
+      <section class="sec" id="people" aria-labelledby="people-t">
+        <h2 id="people-t">인물 명부</h2>
+        <p class="intro">봉인 셋 말고도 열한 명이 당신을 기다린다. 처음엔 대부분 「불꺼진 신입」을 깔보고, 실력을 보일 때마다 한 사람씩 태도가 바뀐다. 카드를 누르면 표정 여섯 가지와 성격을 볼 수 있다.</p>
+        <div class="filters" role="group" aria-label="소속별로 보기">
+          <button type="button" data-f="all" aria-pressed="true">전체</button>
+          <button type="button" data-f="magic" aria-pressed="false">마법과</button>
+          <button type="button" data-f="sword" aria-pressed="false">검술과</button>
+          <button type="button" data-f="spirit" aria-pressed="false">정령학과</button>
+          <button type="button" data-f="staff" aria-pressed="false">교수진</button>
+        </div>
+        <div class="people" id="people-grid"></div>
+      </section>
+
+      <section class="sec" id="start" aria-labelledby="start-t">
+        <h2 id="start-t">처음 하는 법</h2>
+        <p class="intro">여기부터는 만든 사람이 드리는 안내예요.</p>
+        <div class="start">
+          <div>
+            <h3>시작 설정 세 가지</h3>
+            <dl class="modes">
+              <div><dt>누구 손을 잡을래?</dt><dd>평민 신입생으로 바로 금서고에서 시작해요. 처음이면 여기부터 하세요.</dd></div>
+              <div><dt>자유 설정</dt><dd>신분, 성별, 출신을 정하고 입학식 측정장에서 시작해요. 안 적으면 평민이에요.</dd></div>
+              <div><dt>이미지 미리보기</dt><dd>인물 그림만 모아 보는 칸이에요. 여기서는 채팅을 치지 마세요.</dd></div>
+            </dl>
+            <div class="status" aria-label="첫 장면의 상태창">
+              <p class="cap">첫 장면의 상태창</p>
+              <p>경지: 없음 | 소속: 배정 전</p>
+              <p>신분: 평민 | 꼬리표: 「불꺼진 신입」</p>
+              <p>스킬: 없음</p>
+              <p>스탯:<br>- 신체: F [00/100]<br>- 마나: F [00/100]<br>- 지능: F [00/100]<br>- 감응: F [00/100]</p>
+              <p>🔓 계약 전<br>👁 눈치: 아무도 모름</p>
+              <p>📌 마그다 교수의 순찰 등불이 내려오고 있다<br>관계: 마그다(8써클)[0/감시]</p>
+            </div>
+          </div>
+          <div>
+            <h3>첫 입력은 이렇게</h3>
+            <ul class="tries">
+              <li>졸린 정령에게 손을 내민다.</li>
+              <li>금빛 글자가 떠오른 책에 손을 얹는다.</li>
+              <li>녹슨 장검의 손잡이를 쥔다.</li>
+            </ul>
+            <h3 style="margin-top:1.8rem">알아 두면 좋은 것</h3>
+            <ul class="tips">
+              <li>고른 혼과 가까워질수록(동조 ♥) 봉인이 한 겹씩 풀리고 새 힘이 생겨요.</li>
+              <li>남 앞에서 봉인 힘을 크게 쓰면 눈치가 올라요. 아무도 모름, 수상해함, 캐묻는 중 순서예요.</li>
+              <li>같은 방식으로 두 번 해내면 꼬리표가 바뀌어요. 꾀로 이기면 「꾀쟁이 신입」처럼요.</li>
+              <li>신분, 성별, 외모는 대화 프로필이나 유저노트에 적어 주세요. 이름은 대화 프로필 이름으로 불려요.</li>
+              <li>명령어: <span class="nw">!요약</span>은 지금까지를 다섯 줄로, <span class="nw">!그림</span>은 안 뜬 그림을 다시, <span class="nw">!디버그</span>는 상태창 값을 바로잡아요.</li>
+              <li>하이퍼챗 1.0, 답변 길이 3배로 시험했어요. 상태창이 잘리면 답변 길이를 늘려 주세요.</li>
+            </ul>
+          </div>
+        </div>
+        <dl class="facts">
+          <div><dt>인물</dt><dd>14명</dd></div>
+          <div><dt>그림</dt><dd>112장</dd></div>
+          <div><dt>시작 설정</dt><dd>3개</dd></div>
+          <div><dt>이용 등급</dt><dd>전연령</dd></div>
+        </dl>
+        <div class="cta">
+          <a class="play" href="https://crack.wrtn.ai/detail/6afa7856c443dc39f53a9e3e" target="_blank" rel="noopener">크랙에서 플레이</a>
+          <p>이상한 점은 작품 댓글로 남겨 주세요.</p>
+        </div>
+      </section>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>클라비스 아카데미 신입생 안내서</span>
+    <span>만든 사람 한량이오</span>
+  </div>
+</footer>
+
+<dialog id="dlg" aria-labelledby="dlg-name">
+  <div class="dlg">
+    <button type="button" class="close" id="dlg-close">닫기</button>
+    <div class="dlg-pic">
+      <img id="dlg-img" src="" alt="" width="1200" height="821">
+      <div class="faces" id="dlg-faces" role="group" aria-label="표정 고르기"></div>
+    </div>
+    <div class="dlg-body">
+      <h3 id="dlg-name"></h3>
+      <p class="where" id="dlg-where"></p>
+      <dl id="dlg-dl"></dl>
+    </div>
+  </div>
+</dialog>
+
+<script>
+const SEALS=[
+ {k:"arche",role:"정령",name:"아르케",line:"“흐아암… 몇 해 만이지요오. …어머, 감응력이 하나도 없는 사람이 저를 깨웠네요오?”",
+  rows:[["성격","졸리고 느긋한 태고의 정령. 화나면 방이 얼어붙는다."],["말버릇","“흐아암”, “~예요오”"],["부르는 말","계약자님"],["처음 태도","경계"],["어울리는 학과","정령학과"],["첫 봉인이 풀리면","하급 정령이 보인다. 계약 뒤에는 흰 털 공 같은 작은 정령이 되어 곁에 다닌다."]]},
+ {k:"caleb",role:"마서",name:"칼레브",line:"“후후, 순서는 지키렴. 먼저 눈뜬 건 나란다. <span class=\"nw\">…그렇지?</span>”",
+  rows:[["성격","능글맞은 선생님"],["말버릇","“후후”, “…그렇지?”"],["부르는 말","제자 후보"],["처음 태도","무시"],["어울리는 학과","마법과"],["첫 봉인이 풀리면","남의 주문이 어떻게 짜였는지 보인다."]]},
+ {k:"asel",role:"성검",name:"아셀",line:"“흐응~ 둘 다 조용히 해. 이 몸이 제일 먼저 찜했거든?!”",
+  rows:[["성격","기품을 따지며 빈정대는 성검"],["말버릇","“흐응~”, “이 몸”, “~거든?!”"],["부르는 말","주인 놈"],["처음 태도","멸시"],["어울리는 학과","검술과"],["첫 봉인이 풀리면","녹슨 검이 겨우 들린다."]]}
+];
+const OBJ_ALT={arche:"서리 낀 정령석이 돌 받침 위에 놓여 있다",caleb:"쇠사슬에 묶인 채 펼쳐진 마서. 금빛 글자가 떠오른다",asel:"서가에 기대 선 녹슨 장검"};
+const HUM_ALT={arche:"봉인이 풀린 아르케. 연두빛이 도는 흰 긴 머리에 졸린 하늘색 눈, 손에 흰 털 공 정령을 안고 있다",caleb:"봉인이 풀린 칼레브. 은회색 묶은 머리, 금빛 눈, 검은 로브 차림으로 마서를 들고 있다",asel:"봉인이 풀린 아셀. 붉은갈색 포니테일에 주황 눈, 장검을 쥐고 웃고 있다"};
+const keySvg='<svg width="22" height="12" viewBox="0 0 22 12" aria-hidden="true"><circle cx="5.5" cy="6" r="4.2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9.7 6h11.3M17 6v3.6M20.2 6v2.6" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>';
+const row=document.getElementById('seal-row');
+SEALS.forEach(s=>{
+  const el=document.createElement('article');
+  el.className='seal';el.dataset.k=s.k;
+  el.innerHTML=`<div class="frame">
+    <img class="obj" src="img/seal_${s.k}_obj.jpg" width="832" height="832" loading="lazy" alt="${OBJ_ALT[s.k]}">
+    <img class="human" src="img/seal_${s.k}_human.jpg" width="832" height="832" loading="lazy" alt="${HUM_ALT[s.k]}">
+    <div class="flash"></div>
+    <svg class="ring" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="48" transform="rotate(-90 50 50)"/></svg>
+  </div>
+  <div class="seal-name"><small>${s.role}</small><h3>${s.name}</h3></div>
+  <p class="seal-line">${s.line}</p>
+  <button type="button" class="unseal" aria-expanded="false" aria-controls="more-${s.k}">${keySvg}<span>봉인 풀기</span></button>
+  <div class="more" id="more-${s.k}"><div><dl>${s.rows.map(r=>`<div><dt>${r[0]}</dt><dd>${r[1]}</dd></div>`).join('')}</dl></div></div>`;
+  row.appendChild(el);
+  const btn=el.querySelector('.unseal'),lab=btn.querySelector('span'),more=el.querySelector('.more');
+  more.inert=true;
+  btn.addEventListener('click',()=>{
+    const open=!el.classList.contains('open');
+    el.classList.remove('closing');
+    if(open){el.classList.add('open');}
+    else{el.classList.remove('open');el.classList.add('closing');}
+    btn.setAttribute('aria-expanded',String(open));
+    lab.textContent=open?'다시 봉인하기':'봉인 풀기';
+    more.inert=!open;
+  });
+});
+
+const P=[
+ {k:"julian",g:"magic",name:"율리안",where:"마법과 수석, 공작가 차남",one:"오만하고, 앞장서서 조롱하는 라이벌",
+  rows:[["성격","오만하다. 앞장서서 당신을 조롱하는 라이벌."],["말버릇","“흥.”, “~군”"],["부르는 말","평민 (당신이 귀족이면 “귀족의 수치”)"],["처음 태도","멸시"],["사이","미엘과 소꿉친구. 세실과는 혼담이 깨진 사이로, 둘이 1학년 귀족 파벌의 두 머리다."]]},
+ {k:"miel",g:"magic",name:"미엘",where:"마법과 1학년, 몰락한 사서 가문",one:"밝은 수다쟁이",
+  rows:[["성격","밝은 수다쟁이"],["말버릇","“헤헤”"],["부르는 말","신입아"],["처음 태도","호의"],["사이","율리안을 “공작님~” 하고 놀린다. 덱스와 소문을 주고받는다."]]},
+ {k:"dex",g:"magic",name:"덱스",where:"기숙사 룸메이트, 마법과 낙제 직전",one:"소문쟁이 장난꾸러기",
+  rows:[["성격","소문쟁이 장난꾸러기"],["말버릇","“에이~”"],["부르는 말","형씨"],["처음 태도","호의"],["사이","모두에게 별명을 붙인다."]]},
+ {k:"dowin",g:"sword",name:"도윈",where:"검술과 평민 장학생",one:"거칠고 말이 툭툭 나온다",
+  rows:[["성격","거칠고 말이 툭툭 나온다."],["말버릇","“쳇.”"],["부르는 말","야 꼴찌"],["처음 태도","무시"],["사이","카티와 맞수"]]},
+ {k:"kati",g:"sword",name:"카티",where:"검술과 1학년, 기사 가문 막내",one:"씩씩한 칼잡이",
+  rows:[["성격","씩씩한 칼잡이"],["말버릇","“넵!”, “~입니다!”"],["부르는 말","선배"],["처음 태도","무시"],["사이","도윈과 맞수"]]},
+ {k:"cecil",g:"spirit",name:"세실",where:"정령학과 1학년, 백작가 영애",one:"새침하고 깐깐하다",
+  rows:[["성격","새침하고 깐깐하다."],["말버릇","“어머.”, “~이시네요”"],["부르는 말","평민 씨 (당신이 귀족이면 영식님·영애님)"],["처음 태도","멸시"],["사이","율리안과 혼담이 깨진 사이. 피오가 뒤를 졸졸 따라다닌다."]]},
+ {k:"pio",g:"spirit",name:"피오",where:"정령학과 1학년, 숲 출신",one:"말수가 적고, 동물에게만 수다스럽다",
+  rows:[["성격","말수가 적다. 동물에게만 수다스럽다."],["말버릇","“…”"],["부르는 말","…너"],["처음 태도","경계"],["사이","세실 뒤를 졸졸 따라다닌다. 오델의 연구실에 숨어든다."]]},
+ {k:"arche_spirit",g:"spirit",name:"아르케",where:"계약 뒤 곁에 다니는 작은 정령",one:"손바닥만 한 흰 털 공 정령",
+  rows:[["모습","손바닥만 한 흰 털 공. 머리에 새싹 잎 두 장과 작은 얼음 결정이 떠 있다."],["보이는 사람","감응력이 있는 사람에게만 보인다."],["언제","정령석의 아르케와 계약하면 곁에 다닌다."]]},
+ {k:"reiner",g:"staff",name:"라이너",where:"클라비스 학장, 30대 초반",one:"귀찮아하는 젊은 학장",
+  rows:[["성격","귀찮아하는 젊은 학장"],["말버릇","“음, 그러니까.” 하오체"],["부르는 말","신입생 군"],["처음 태도","무관심"],["사이","오델에게 늘 예산을 졸린다."]]},
+ {k:"magda",g:"staff",name:"마그다",where:"마법과 학과장, 금서고 관리",one:"엄격한 원칙주의자",
+  rows:[["성격","엄격한 원칙주의자"],["말버릇","“규칙 제○조.” 다나까체"],["부르는 말","학생"],["처음 태도","감시"],["사이","하르트와 같은 기수. 술 문제로 잔소리를 한다."]]},
+ {k:"hart",g:"staff",name:"하르트",where:"검술과 학과장",one:"호탕한 아저씨",
+  rows:[["성격","호탕한 아저씨"],["말버릇","“껄껄!”, “~라고!”"],["부르는 말","애송이"],["처음 태도","호의"],["사이","마그다와 같은 기수"]]},
+ {k:"odel",g:"staff",name:"오델",where:"정령학과 학과장",one:"느리고 다정한 학자",
+  rows:[["성격","느리고 다정한 학자"],["말버릇","“오호.”, “~랍니다”"],["부르는 말","견습생"],["처음 태도","무관심"],["사이","라이너에게 늘 예산을 조른다."]]}
+];
+const grid=document.getElementById('people-grid');
+P.forEach(p=>{
+  const b=document.createElement('button');
+  b.type='button';b.className='person';b.dataset.g=p.g;
+  b.innerHTML=`<img src="img/card_${p.k}.jpg" width="1200" height="821" loading="lazy" alt="${p.name} 프로필 카드"><span class="nm"><b>${p.name}</b><span>${p.where}</span></span><span class="one">${p.one}</span>`;
+  b.addEventListener('click',()=>openP(p));
+  grid.appendChild(b);
+});
+document.querySelectorAll('.filters button').forEach(f=>{
+  f.addEventListener('click',()=>{
+    document.querySelectorAll('.filters button').forEach(x=>x.setAttribute('aria-pressed',String(x===f)));
+    const v=f.dataset.f;
+    grid.querySelectorAll('.person').forEach(c=>{c.hidden=!(v==='all'||c.dataset.g===v)});
+  });
+});
+const dlg=document.getElementById('dlg');
+const FACES=[["base","기본"],["smile","웃음"],["sad","슬픔"],["angry","화남"],["scorn","경멸"],["shy","부끄러움"]];
+function showFace(p,f){
+  const im=document.getElementById('dlg-img');
+  im.src=f==='base'?`img/card_${p.k}.jpg`:`img/expr/${p.k}_${f}.jpg`;
+  const lab=FACES.find(x=>x[0]===f)[1];
+  im.alt=f==='base'?`${p.name} 프로필 카드`:`${p.name}의 ${lab} 표정`;
+  document.querySelectorAll('#dlg-faces button').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.f===f)));
+}
+function openP(p){
+  const fc=document.getElementById('dlg-faces');
+  fc.innerHTML=FACES.map(([f,l])=>`<button type="button" data-f="${f}" aria-pressed="false"><img src="img/thumb/${p.k}_${f}.jpg" alt="" width="264" height="181"><span>${l}</span></button>`).join('');
+  fc.querySelectorAll('button').forEach(b=>b.addEventListener('click',()=>showFace(p,b.dataset.f)));
+  showFace(p,'base');
+  document.getElementById('dlg-name').textContent=p.name;
+  document.getElementById('dlg-where').textContent=p.where;
+  document.getElementById('dlg-dl').innerHTML=p.rows.map(r=>`<div><dt>${r[0]}</dt><dd>${r[1]}</dd></div>`).join('');
+  if(dlg.showModal)dlg.showModal();else dlg.setAttribute('open','');
+}
+document.getElementById('dlg-close').addEventListener('click',()=>dlg.close());
+dlg.addEventListener('click',e=>{if(e.target===dlg)dlg.close();});
+</script>
+</body>
+</html>
